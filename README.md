@@ -27,6 +27,9 @@ I wanted to understand what actually drives delivery delays — not just report 
 - Removed duplicate records
 - Standardised the column name `Time_taken (min)` → `Delivery_Time_Min`
 - Fixed a recurring city name typo: `Metropolitian` → `Metropolitan`
+- Labelled missing City values as "Not Available" and excluded them at         
+  dashboard level — ensuring city-based comparisons reflected only complete, 
+  reliable records 
 - Parsed `Order_Time` and `Pickup_Time` from string → datetime (handling format errors with `coerce`)
 - Calculated `Prep_Time_Min` from the difference, set negative values to null
 - Filtered out extreme outliers: delivery times ≥ 120 min removed
@@ -64,8 +67,3 @@ I wanted to understand what actually drives delivery delays — not just report 
 ├── data_cleaning.py          # Full cleaning script
 └── dashboard.png             # Power BI dashboard screenshot
 ```
----
-
-## Note
-
-Missing city values were labeled as "Not Available" during data cleaning and excluded in dashboard-level analysis for consistency.
