@@ -62,7 +62,7 @@ I wanted to understand what actually drives delivery delays — not just report 
 ├── raw_data.csv              # Original dataset
 ├── cleaned_data.csv          # Cleaned and enriched dataset
 ├── data_cleaning.py          # Full cleaning script
-└── Dashboard.png             # Power BI dashboard screenshot
+└── dashboard.png             # Power BI dashboard screenshot
 ```
 ---
 
